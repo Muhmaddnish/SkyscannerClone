@@ -1,0 +1,97 @@
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./Background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 3rem;
+    position: relative;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 20px; /* Added border-radius for curved edges */
+    overflow: hidden;/* added to make the image also curved */
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .hero-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  }
+  
+  .hero-button:hover {
+    background-color: #f9f9f9;
+    color: #222;
+    border-color: #ccc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-button:active {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      padding: 2rem;
+      text-align: center;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 15px; /* Adjust border radius for smaller screens */
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
+    .hero-heading {
+      font-size: 2.5rem;
+    }
+  
+    .hero-button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 1.2rem;
+    }
+  
+    .hero-heading {
+      font-size: 2rem;
+    }
+  }
